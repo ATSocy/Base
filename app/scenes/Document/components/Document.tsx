@@ -26,14 +26,12 @@ import {
   TeamPreference,
 } from "@shared/types";
 import { ProsemirrorHelper, Heading } from "@shared/utils/ProsemirrorHelper";
-import { parseDomain } from "@shared/utils/domains";
 import { determineIconType } from "@shared/utils/icon";
 import RootStore from "~/stores/RootStore";
 import Document from "~/models/Document";
 import Revision from "~/models/Revision";
 import DocumentMove from "~/scenes/DocumentMove";
 import DocumentPublish from "~/scenes/DocumentPublish";
-import Branding from "~/components/Branding";
 import ConnectionStatus from "~/components/ConnectionStatus";
 import ErrorBoundary from "~/components/ErrorBoundary";
 import LoadingIndicator from "~/components/LoadingIndicator";
@@ -596,11 +594,6 @@ class DocumentScene extends React.Component<Props> {
                 )}
               </React.Suspense>
             </MeasuredContainer>
-            {isShare &&
-              !parseDomain(window.location.origin).custom &&
-              !auth.user && (
-                <Branding href="//www.getoutline.com?ref=sharelink" />
-              )}
           </Container>
           {!isShare && (
             <Footer>
