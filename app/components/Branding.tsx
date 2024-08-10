@@ -3,7 +3,7 @@ import styled from "styled-components";
 import breakpoint from "styled-components-breakpoint";
 import { depths, s } from "@shared/styles";
 import env from "~/env";
-import OutlineIcon from "./Icons/OutlineIcon";
+import AtsocyIcon from "./Icons/AtsocyIcon";
 
 type Props = {
   href?: string;
@@ -12,8 +12,8 @@ type Props = {
 function Branding({ href = env.URL }: Props) {
   return (
     <Link href={href}>
-      <OutlineIcon size={20} />
-      &nbsp;{env.APP_NAME}
+      <AtsocyIcon size={20} />
+      &nbsp;ATSocy.com
     </Link>
   );
 }
@@ -22,10 +22,10 @@ const Link = styled.a`
   justify-content: center;
   padding-bottom: 16px;
 
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   text-decoration: none;
-  border-top-right-radius: 2px;
+  border-radius: 4px;
   color: ${s("text")};
   display: flex;
   align-items: center;
