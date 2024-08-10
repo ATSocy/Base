@@ -768,7 +768,7 @@
   "A magic sign-in link has been sent to the email <em>{{ emailLinkSentTo }}</em> if an account exists.": "A magic sign-in link has been sent to the email <em>{{ emailLinkSentTo }}</em> if an account exists.",
   "Back to login": "Back to login",
   "Get started by choosing a sign-in method for your new workspace below…": "Get started by choosing a sign-in method for your new workspace below…",
-  "Login to {{ authProviderName }}": "Login to {{ authProviderName }}",
+  "Enter {{ authProviderName }}": "Enter {{ authProviderName }}",
   "You signed in with {{ authProviderName }} last time.": "You signed in with {{ authProviderName }} last time.",
   "Or": "Or",
   "Already have an account? Go to <1>login</1>.": "Already have an account? Go to <1>login</1>.",

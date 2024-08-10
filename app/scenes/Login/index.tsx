@@ -242,9 +242,9 @@ function Login({ children }: Props) {
         />
         <Logo>
           {config.logo && !isCreate ? (
-            <TeamLogo size={48} src={config.logo} />
+            <TeamLogo size={64} src={config.logo} />
           ) : (
-            <OutlineIcon size={48} />
+            <OutlineIcon size={64} />
           )}
         </Logo>
         {isCreate ? (
@@ -261,7 +261,7 @@ function Login({ children }: Props) {
         ) : (
           <>
             <StyledHeading as="h2" centered>
-              {t("Login to {{ authProviderName }}", {
+              {t("Enter {{ authProviderName }}", {
                 authProviderName: config.name || env.APP_NAME,
               })}
             </StyledHeading>
@@ -317,6 +317,7 @@ function Login({ children }: Props) {
 
 const StyledHeading = styled(Heading)`
   margin: 0;
+  margin-top: 10px;
 `;
 
 const Domain = styled.div`
