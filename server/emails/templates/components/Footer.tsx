@@ -53,9 +53,9 @@ export default ({ unsubscribeUrl, children }: Props) => {
       <TBody>
         <TR>
           <TD style={footerStyle}>
-            <Link href={env.URL}>{env.APP_NAME}</Link>
+            <Link href={env.URL}>ATS | Base</Link>
             <a href={UrlHelper.twitter} style={externalLinkStyle}>
-              Twitter
+              x.com/ATSocy
             </a>
           </TD>
         </TR>

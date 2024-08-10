@@ -22,11 +22,11 @@ type Props = EmailProps & {
  */
 export default class InviteEmail extends BaseEmail<Props, Record<string, any>> {
   protected subject({ actorName, teamName }: Props) {
-    return `${actorName} invited you to join ${teamName}’s workspace`;
+    return `${actorName} invited you to join ${teamName}`;
   }
 
   protected preview() {
-    return `${env.APP_NAME} is a place for your team to build and share knowledge.`;
+    return `ATS.Base is a place for aliens to build and share knowledge.`;
   }
 
   protected renderAsText({
@@ -36,11 +36,11 @@ export default class InviteEmail extends BaseEmail<Props, Record<string, any>> {
     teamUrl,
   }: Props): string {
     return `
-Join ${teamName} on ${env.APP_NAME}
+Join ${teamName}
 
-${actorName} ${actorEmail ? `(${actorEmail})` : ""} has invited you to join ${
-      env.APP_NAME
-    }, a place for your team to build and share knowledge.
+${actorName} ${
+      actorEmail ? `(${actorEmail})` : ""
+    } has invited you to join ${teamName}, a place for your team to build and share knowledge.
 
 Join now: ${teamUrl}
 `;
@@ -59,8 +59,7 @@ Join now: ${teamUrl}
           </Heading>
           <p>
             {actorName} {actorEmail ? `(${actorEmail})` : ""} has invited you to
-            join {env.APP_NAME}, a place for your team to build and share
-            knowledge.
+            join {teamName}, a place for aliens to build and share knowledge.
           </p>
           <EmptySpace height={10} />
           <p>

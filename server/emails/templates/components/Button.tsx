@@ -8,7 +8,7 @@ const style: React.CSSProperties = {
   display: "inline-block",
   padding: "10px 20px",
   color: "#FFFFFF",
-  background: "#000000",
+  background: "#f92bd1",
   borderRadius: "4px",
   fontWeight: 500,
   textDecoration: "none",

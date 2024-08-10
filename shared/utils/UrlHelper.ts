@@ -1,6 +1,6 @@
 export class UrlHelper {
-  public static github = "https://www.github.com/outline/outline/issues";
-  public static twitter = "https://twitter.com/getoutline";
+  public static github = "https://www.github.com/ATSocy";
+  public static twitter = "https://twitter.com/ATSocy";
   public static contact = "https://www.getoutline.com/contact";
   public static developers = "https://www.getoutline.com/developers";
   public static changelog = "https://www.getoutline.com/changelog";
